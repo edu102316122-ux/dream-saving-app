@@ -373,7 +373,7 @@ const App = () => {
   if (view === 'loading') return <div className="h-screen bg-[#FDFDFB] flex items-center justify-center text-slate-400 font-medium tracking-widest">夢想加載中...</div>;
 
   return (
-    <div className="max-w-md mx-auto h-screen bg-[#FDFDFB] overflow-hidden flex flex-col shadow-2xl relative font-sans text-slate-800">
+    <div className="w-full max-w-md mx-auto h-screen bg-[#FDFDFB] overflow-hidden flex flex-col shadow-2xl relative font-sans text-slate-800">
       
       <CelebrationEffect isVisible={showCelebration} />
       <EncouragementModal isOpen={showEncouragement} daysLeft={stats.daysLeft} quote={currentQuote} />
@@ -669,7 +669,7 @@ const App = () => {
         .animate-celebrate { animation-name: celebrate; animation-timing-function: linear; animation-fill-mode: forwards; }
         @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
         .animate-shimmer { animation: shimmer 3s infinite linear; }
-        body { background-color: #F8FAFC; margin: 0; overflow: hidden; -webkit-tap-highlight-color: transparent; }
+        body { background-color: #F8FAFC; margin: 0; overflow: hidden; -webkit-tap-highlight-color: transparent; display: flex; justify-content: center; }
         ::-webkit-scrollbar { display: none; }
         input[type="number"]::-webkit-inner-spin-button { display: none; }
         .date-input-field { position: relative; cursor: pointer; -webkit-appearance: none; min-height: 3rem; }
