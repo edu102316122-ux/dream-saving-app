@@ -373,7 +373,7 @@ const App = () => {
   if (view === 'loading') return <div className="h-screen bg-[#FDFDFB] flex items-center justify-center text-slate-400 font-medium tracking-widest">夢想加載中...</div>;
 
   return (
-    <div className="w-full max-w-md mx-auto h-screen bg-[#FDFDFB] overflow-hidden flex flex-col shadow-2xl relative font-sans text-slate-800">
+    <div className="w-full max-w-lg mx-auto h-screen bg-[#FDFDFB] overflow-hidden flex flex-col shadow-2xl relative font-sans text-slate-800">
       
       <CelebrationEffect isVisible={showCelebration} />
       <EncouragementModal isOpen={showEncouragement} daysLeft={stats.daysLeft} quote={currentQuote} />
